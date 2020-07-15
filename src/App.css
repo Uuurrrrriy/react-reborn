@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
 }
 
 .App-logo {
@@ -35,4 +39,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.btnClass {
+  width: 100px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 2px solid black;
+  border-radius: 2px;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+  line-height: 12px;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px auto;
+}
+
+.disabled {
+  background: lightgray;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.switcher{
+  width: 40px;
+  height: 20px;
+  background: lightgray;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.tumbler{
+  background: black;
+  width: 18px;
+  height: 18px;
+  border-radius: 100px;
+}
+
+.isOn {
+  justify-content: flex-end;
+  background: lightgreen;
+}
+
+.isOff {
+  justify-content: flex-start;
+  background: lightgray;
 }
